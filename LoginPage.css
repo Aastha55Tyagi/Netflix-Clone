@@ -2,14 +2,18 @@
     background-image: url(Background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%; 
-    
+    height: 100%;
+
 }
-html, body {
+
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 body {
     background-color: black;
 }
@@ -19,31 +23,32 @@ header {
     grid-template-columns: auto 5em 5em;
     grid-template-rows: 3;
     margin: 0 10em 13em 10em;
-column-gap: 3em;
+    column-gap: 3em;
 }
-.grid-item{
+
+.grid-item {
     width: 7em;
     margin-top: 25px;
     height: 45%;
     border-radius: 5px;
-    background-color: transparent; 
+    background-color: transparent;
     color: rgb(244, 242, 242);
     font-size: 15px;
     text-align: center;
 }
 
 
-.grid-item option{
-color:black
+.grid-item option {
+    color: black
 }
 
-.grid-item-1{
+.grid-item-1 {
     width: 7em;
     margin-top: 25px;
     height: 45%;
     border-radius: 5px;
     color: white;
-    background-color:#E50914 ;
+    background-color: #E50914;
     font-size: 15px;
     text-align: center;
     font-weight: bold;
@@ -54,7 +59,7 @@ color:black
 
 .background {
     background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgb(0, 0, 0) 10%, rgba(16, 16, 16, 0.545), rgba(14, 13, 13));
+    background: linear-gradient(0deg, rgb(18, 18, 18), rgba(9, 9, 9, 0.458), rgb(0, 0, 0));
 }
 
 .item-tex {
@@ -62,7 +67,7 @@ color:black
     color: aliceblue;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-padding-bottom: 155px;
+    padding-bottom: 147px;
 
 }
 
@@ -74,9 +79,11 @@ h1 {
 p {
     font-size: 20px;
 }
-#tex{
+
+#tex {
     font-size: 27px;
 }
+
 .items-input {
     background-color: rgba(20, 21, 22, 0.553);
     border: solid #a0a0a0 1px;
@@ -84,9 +91,9 @@ p {
     width: 23%;
     height: 4.6em;
     padding-left: 2em;
-   
+
     border-radius: 5px;
- 
+
     /* display: flex; */
 }
 
@@ -103,12 +110,83 @@ p {
     cursor: pointer;
     text-align: center;
 }
-.input{
+
+.input {
     display: flex;
     justify-content: center;
     gap: 1em;
-    
+
 }
-button:hover{
+
+button:hover {
     background-color: #bb040d;
+}
+
+.container {
+    display: flex;
+    /* grid-template-columns: 50% auto; */
+    /* grid-row: 1; */
+
+    flex-direction: row;
+    color: white;
+    border-top: solid #2b2a2a 8px;
+    height: 80%;
+    border: 3%;
+    /* overflow: hidden; */
+    align-items: center;
+    justify-content: center;
+    /* column-gap: 15%; */
+    overflow: hidden;
+    column-gap: 15em;
+/* align-content: center; */
+}
+
+.container>img {
+    width: 40%;
+    height: 70%;
+    /* border: solid rebeccapurple 3px; */
+    position: absolute;
+    overflow: hidden;
+    /* z-index: -1; */
+
+    margin-left: 50em;
+}
+
+
+
+video {
+    width: 19%;
+    /* height: +1; */
+    /* z-index: 1; */
+    overflow: hidden;
+    /* margin: 0 50% 20% 0; */
+}
+
+.inside-container {
+
+    flex-flow: row-reverse;
+    
+
+
+
+    flex-direction: row;
+    color: white;
+    border-top: solid #2b2a2a 8px;
+   
+    /* overflow: hidden; */
+    align-items: center;
+    justify-content: center;
+    /* column-gap: 15%; */
+    overflow: hidden;
+    /* column-gap: 10em; */
+}
+
+.inside-container>img {
+    margin: 0;
+
+}
+
+.inside-container {
+    display: flex;
+    flex-direction: row;
 }
